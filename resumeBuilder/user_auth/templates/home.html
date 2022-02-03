@@ -1,10 +1,77 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Resume Generator</title>
-    </head>
+{% load static %}
 
-    <body>
-        Bla Bla Bla...
-    </body>
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+ <meta charset="utf-8"/>
+
+ <title>
+
+ Resume Builder
+
+ </title>
+
+ <link href="{% static './styles.css' %}" rel="stylesheet"/>
+
+ </head>
+
+ <body>
+
+ <!-- partial:index.partial.html -->
+
+ <div id="javascript_header">
+
+ </div>
+
+ <form>
+
+ <div class="form__header">
+
+ <h1>
+
+ Build Your Resume
+
+ </h1>
+
+ <p>
+
+ Dashboard
+
+ </p>
+
+ </div>
+
+ <div class="line-break">
+
+ </div>
+
+ <a class="button" href="{% url 'resume_fill' %}"> Create Resume</a>
+
+ <div class="line-break">
+
+ </div>
+
+ <a class="button" href="{% url 'resume_view' %}"> View Resume</a>
+
+ <div class="line-break">
+
+ </div>
+ {% if user.is_authenticated %}
+ <a class="button" style="background-color:red;" href="{% url 'logout' %}"> Logout </a>
+ {% else %}
+ <a class="button" style="background-color:red;" href="{% url 'login' %}"> Login </a>
+ {% endif %}
+ </form>
+
+ <!-- partial -->
+
+ <script src="{% static './script.js' %}">
+
+ </script>
+
+ </body>
+
 </html>

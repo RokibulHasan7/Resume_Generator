@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Resume Builder Page</title>
+</head>
+<body>
+<div class="container">
+  <p style="text-align: center; font-size: 30px; font-weight: bold; padding-top: 30px;">Build Your Resume</p>
+
+  <form method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+          <label for="exampleFormControlInput1">First Name</label>
+          <input name="first_name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your First name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Last Name</label>
+        <input name="last_name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Address</label>
+        <input name="address" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Address...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Mobile Number</label>
+        <input name="mobile" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Your Mobile Number..." >
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">LinkedIn</label>
+        <input name="linkedin" type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://example.com" pattern="https://.*">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">GitHub</label>
+        <input name="github" type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://example.com" pattern="https://.*">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Personal Website</label>
+        <input name="website" type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://example.com" pattern="https://.*">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Objective</label>
+        <textarea name="about_detail" type="text" class="form-control" rows="3" id="exampleFormControlTextarea1" placeholder="Your Last name..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Degree</label>
+        <input name="degree" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">University Name</label>
+        <input name="varsity_name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Passing Year</label>
+        <input name="passing_year" type="date" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Result</label>
+        <input name="result" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Work Title</label>
+        <input name="title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Company Name</label>
+        <input name="place" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Start Date</label>
+        <input name="start_date" type="date" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">End Date</label>
+        <input name="end_date" type="date" class="form-control" id="exampleFormControlInput1" placeholder="Your Last name...">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Work Description</label>
+        <textarea name="description" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Last name..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Skills</label>
+        <textarea name="skill_detail" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Last name..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Projects</label>
+        <textarea name="project_detail" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Last name..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Awards</label>
+        <textarea name="award_detail" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Last name..."></textarea>
+    </div>
+
+    <button class="btn btn-secondary" type="submit"> Build Resume</button>
+  </form>
+</div>
+
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+</body>
+</html>
