@@ -1,6 +1,6 @@
 # Resume Builder
 
-![GitHub repo size](https://github.com/RokibulHasan7/Resume_Generator)
+![GitHub repo size](https://img.shields.io/github/repo-size/RokibulHasan7/Resume_Generator)
 ![GitHub contributors](https://img.shields.io/github/contributors/RokibulHasan7/Resume_Generator)
 ![GitHub stars](https://img.shields.io/github/stars/RokibulHasan7/Resume_Generator?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/RokibulHasan7/Resume_Generator?style=social)
